@@ -28,9 +28,14 @@ public class ListStack implements StackInterface {
 
     @Override
     public Object pop() {
-        return null;
+        if (isEmpty()) {
+            return null;
+        }
+        Object object = top.getObject();
+        top = top.above;
+        size--;
+        return object;
     }
-
     @Override
     public boolean push(Object object) {
         return false;
