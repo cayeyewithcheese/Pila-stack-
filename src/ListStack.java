@@ -38,7 +38,12 @@ public class ListStack implements StackInterface {
     }
     @Override
     public boolean push(Object object) {
-        return false;
+        
+        StackNode nuevo = new StackNode(object);
+        nuevo.above = top;
+        top = nuevo;
+        size++;
+        return true;
     }
 
     @Override
