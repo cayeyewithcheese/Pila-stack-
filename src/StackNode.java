@@ -12,4 +12,18 @@ public class StackNode {
         //    this.below = null; // si quieres implementarlo con la lista mirando hacia abajo descomenta esta linea y borra la de arriba
     }
 
+    public StackNode(Object object) {
+        this.object = object;
+        this.above = null;
+    }
+
+    public Object getObject() {
+        return object;
+    }
+
+    public void setObject(Object object) {
+        this.object = object;
+    }
 }
+
+
