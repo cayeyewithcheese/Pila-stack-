@@ -19,7 +19,11 @@ public class ListStack implements StackInterface {
 
     @Override
     public Object peek() {
-        return null;
+        if (isEmpty()) {
+            return null;
+        }
+        return top.getObject();
+
     }
 
     @Override
