@@ -53,6 +53,13 @@ public class ListStack implements StackInterface {
 
     @Override
     public boolean search(Object object) {
+        StackNode actual = top;
+        while (actual != null) {
+            if (actual.getObject().equals(object)) {
+                return true;
+            }
+            actual = actual.above;
+        }
         return false;
     }
     @Override
