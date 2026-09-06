@@ -14,7 +14,7 @@ public class ListStack implements StackInterface {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
     @Override
