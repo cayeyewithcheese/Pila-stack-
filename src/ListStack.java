@@ -7,6 +7,8 @@ public class ListStack implements StackInterface {
 
     @Override
     public void clear() {
+        top = null;
+        size = 0;
 
     }
 
